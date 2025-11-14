@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jude Bellingham</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #001f3f, #0074D9);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border: 2px solid white;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #001f3f;
+      transform: scale(1.1);
+    }
+
+    section {
+      display: none;
+      padding: 40px 20px;
+      animation: fadeIn 0.8s ease;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    img {
+      max-width: 300px;
+      border-radius: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jude Bellingham</h1>
+    <nav>
+      <a href="#" onclick="showMenu('profil')">Profil</a>
+      <a href="#" onclick="showMenu('karier')">Karier</a>
+      <a href="#" onclick="showMenu('prestasi')">Prestasi</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="profil" class="active">
+      <h2>Profil</h2>
+      <p>Jude Victor William Bellingham lahir pada 29 Juni 2003 di Stourbridge, Inggris. Ia dikenal sebagai salah satu gelandang muda terbaik di dunia.</p>
+      <img src="Upi1.jpg" alt="Jude Bellingham">
+    </section>
+
+    <section id="karier">
+      <h2>Karier</h2>
+      <p>Bellingham memulai kariernya di Birmingham City sebelum bergabung dengan Borussia Dortmund pada 2020. Kini ia bermain untuk Real Madrid dan menjadi kunci di lini tengah tim.</p>
+      <img src="Upi3.jpg" alt="Bellingham di Real Madrid">
+    </section>
+
+    <section id="prestasi">
+      <h2>Prestasi</h2>
+      <ul style="list-style:none; padding:0;">
+        <li>🏆 La Liga Player of the Month - 2023</li>
+        <li>⚽ Golden Boy Award - 2023</li>
+        <li>🌍 England National Team Starter</li>
+      </ul>
+      <img src="Upi2.jpg" alt="Bellingham Trophy">
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SUPRIYADI 💙</p>
+  </footer>
+
+  <script>
+    function showMenu(menu) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(menu).classList.add("active");
+    }
+  </script>
+</body>
+</html>
